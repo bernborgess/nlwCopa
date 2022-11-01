@@ -5,7 +5,6 @@ async function bootstrap() {
     logger: true
   });
 
-
   fastify.get("/pools/count", () => ({ count: 0 }))
 
   await fastify.listen({ port: 3333 })
